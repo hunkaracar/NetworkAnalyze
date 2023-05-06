@@ -1,0 +1,28 @@
+
+detNet.py => Usage Documentation:
+
+
+=> python3 detNet.py -h =>showns help documentation  
+
+=> python3 detNet.py --help => Showns help documentation
+
+=> python3 detNet.py -ip <10.0.2.0/24> => (10.0.2.0/24 ==> CIDR shows)Detects devices in the network(by sending Arp packets)
+
+=> python3 detNet.py -P- <targetip> => scans all ports
+
+=> python3 detNet.py -ip -P <port> => scans a port of your choice
+
+=> python3 detNet.py -Se 10.0.2.0/24 => Detects devices on the network, less detailed(according to the -ip feature)
+
+=> python3 detNet.py -Op 10.0.2.5 => It scans the operating system by giving the ip address of the device you are targeting on the network.
+
+=> python3 detNet.py -Sv 10.0.2.5 => It provides version information about the running services by giving the ip of the device you are targeting on the network.
+
+=> python3 detNet.py -i <eth0> => It listens to the network you are connecting to and catches packets.
+
+=> python3 detNet.py -i <eth0> -f <tcp> => listens to the network you are connecting to and captures and filters packets
+
+=> python3 detNet.py -i <eth0> -ids <ARP> => It listens to the network you are connecting to and captures packets, filters them and tries to detect malicious network activity.
+
+=> python3 detNet.py -i <eth0> -inf <targetIP> => It shows basic router and mac information and also returns its mac address by specifying the destination ip.
+
